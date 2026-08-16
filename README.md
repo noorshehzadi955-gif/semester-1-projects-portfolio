@@ -62,6 +62,9 @@ Summarizes the learning experience and personal growth throughout Semester 1.
 3. Open `index.html` in a web browser.
 
 No additional software or dependencies are required.
+## Project video ## Project Video
+
+[Watch Landing Page Demo](./Landing%20page%20video.mp4)
 
 ## Project Structure
 
