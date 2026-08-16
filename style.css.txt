@@ -1,0 +1,197 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    background-color: #f7f4f2;
+    color: #3a3a3a;
+    line-height: 1.6;
+}
+
+/* HERO */
+.hero {
+    background: linear-gradient(135deg, #d9a7c7, #a1c4fd);
+    color: #2c2c2c;
+    text-align: center;
+    padding: 90px 20px;
+}
+
+.hero h1 {
+    font-size: 3.2rem;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+}
+
+.hero h3 {
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    margin-bottom: 30px;
+    font-size: 1.1rem;
+}
+
+.photo-placeholder {
+    margin: 30px auto;
+    width: 320px;
+    height: 210px;
+    background-color: rgba(255,255,255,0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    font-weight: 500;
+    backdrop-filter: blur(5px);
+}
+
+/* GENERAL SECTIONS */
+.section {
+    padding: 70px 20px;
+    text-align: center;
+}
+
+.light {
+    background-color: #ffffff;
+}
+
+h2 {
+    margin-bottom: 35px;
+    font-size: 2.2rem;
+    color: #5b4b8a;
+}
+
+.about-text {
+    max-width: 700px;
+    margin: 0 auto 40px auto;
+}
+
+/* PROJECT CARDS */
+.team, .campus {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+/* PROJECTS GRID */
+.projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.project-card {
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.06);
+    transition: transform 0.3s ease;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 260px;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Fixed Title Area */
+.project-card h3 {
+    font-size: 1.2rem;
+    color: #3f3464;
+    margin-bottom: 10px;
+    min-height: 50px;
+}
+
+/* Fixed Description Area */
+.project-card p {
+    font-size: 0.95rem;
+    color: #555;
+    flex-grow: 1;
+}
+
+.btn {
+    display: block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #5b4b8a;
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    transition: 0.3s ease;
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+.btn:hover {
+    background-color: #3f3464;
+}
+
+/* REFLECTION */
+.reflection {
+    max-width: 650px;
+    margin: auto;
+    font-style: italic;
+    font-size: 1.05rem;
+}
+
+/* FOOTER */
+footer {
+    background: #3f3464;
+    color: #ffffff;
+    padding: 25px;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+.hero {
+    background: linear-gradient(
+        135deg,
+        #1f1c2c,
+        #928dab
+    );
+    color: white;
+    text-align: center;
+    padding: 110px 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Soft floating background glow */
+.hero::before {
+    content: "";
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    background: radial-gradient(circle, rgba(255,255,255,0.15), transparent 70%);
+    top: -200px;
+    right: -200px;
+    border-radius: 50%;
+}
+
+.hero::after {
+    content: "";
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    background: radial-gradient(circle, rgba(255,255,255,0.1), transparent 70%);
+    bottom: -200px;
+    left: -200px;
+    border-radius: 50%;
+}
+
+/* Make text appear above glow */
+.hero h1,
+.hero h3,
+.hero p,
+.photo-placeholder {
+    position: relative;
+    z-index: 2;
+}
